@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Search">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".Search">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:background="#000000">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:text="휠체어 이용자 서비스"
+                android:gravity="center"
+                android:textSize="30dp"
+                android:textColor="#FFFFFF"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/edit"
+                android:layout_width="300dp"
+                android:layout_height="70dp"
+                android:hint="정류소명을 입력하세요."></EditText>
+
+            <ImageButton
+                android:layout_width="56dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_mice"
+                android:id="@+id/voiceBtn">
+
+            </ImageButton>
+
+            <ImageButton
+                android:id="@+id/button"
+                android:layout_width="60dp"
+                android:layout_height="match_parent"
+                android:src="@drawable/ic_baseline_search_24"
+                android:onClick="mOnClick">
+
+            </ImageButton>
+
+
+        </LinearLayout>
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="#F0F0F0"
+            android:scrollbars="vertical" />
+
+
+    </LinearLayout>
+</LinearLayout>
